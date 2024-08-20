@@ -124,7 +124,7 @@ write_analyses = Task(
     - main part provides the meat of the analysis including the news summary and fera/greed scores
     - summary - key facts and concrete future trend prediction - up, down or sideways.
   """,
-  agent=[stock_analyst_write],
+  agent=stock_analyst_write,
   context=[get_stock_price, get_news]
 )
 
