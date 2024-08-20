@@ -135,11 +135,9 @@ crew = Crew(
   process=Process.hierarchical,
   full_output=True,
   share_crew=False,
-  manage_llm=llm,
+  manager_llm=llm,
   max_iter=15
 )
-
-results = crew.kickoff(inputs={'ticket': 'AAPL'})
 
 with st.sidebar:
   st.header('Enter the Stock to Research')
