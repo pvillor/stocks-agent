@@ -74,7 +74,7 @@ news_analyst = Agent(
 )
 
 get_news = Task(
-  description="""
+  description=f"""
   Take the stock and always include BTC to it (if not requested).
   Use the search tool to search each one individually.
 
