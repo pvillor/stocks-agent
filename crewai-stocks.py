@@ -13,7 +13,7 @@ import streamlit as st
 
 # CREAT YAHOO FINANCE TOOL
 def fetch_stock_price(ticket):
-  stock = yf.download("AAPL", start="2023-08-08", end="2024-08-08")
+  stock = yf.download({ticket}, start="2023-08-08", end="2024-08-08")
   return stock
 
 yahoo_finance_tool = Tool(
